@@ -114,6 +114,23 @@ textarea::placeholder {
 	@apply text-xs prose dark:prose-invert prose-blockquote:border-s-gray-100 prose-blockquote:dark:border-gray-800 prose-blockquote:border-s-2 prose-blockquote:not-italic prose-blockquote:font-normal  prose-headings:font-semibold prose-hr:my-0.5  prose-hr:border-gray-50 prose-hr:dark:border-gray-850 prose-p:my-0 prose-img:my-1 prose-headings:my-1 prose-pre:my-0 prose-table:my-0 prose-blockquote:my-0 prose-ul:-my-0 prose-ol:-my-0 prose-li:-my-0 whitespace-pre-line;
 }
 
+.reasoning-details-content {
+	@apply text-xs italic text-gray-500 dark:text-gray-400;
+}
+
+.reasoning-details-content p {
+	@apply text-xs italic text-gray-500 dark:text-gray-400;
+}
+
+.reasoning-details-content blockquote,
+.reasoning-details-content blockquote p {
+	@apply text-xs italic text-gray-500 dark:text-gray-400;
+}
+
+.reasoning-details-content blockquote {
+	@apply not-italic border-s-gray-200 dark:border-gray-700;
+}
+
 .markdown a {
 	@apply underline;
 }

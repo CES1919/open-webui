@@ -340,7 +340,12 @@
 				className="w-full space-y-1"
 				dir="auto"
 			>
-				<div class=" mb-1.5" slot="content">
+				<div
+					class={`mb-1.5 ${token?.attributes?.type === 'reasoning'
+						? 'reasoning-details-content'
+						: ''}`}
+					slot="content"
+				>
 					<svelte:self
 						id={`${id}-${tokenIdx}-d`}
 						tokens={marked.lexer(decode(token.text))}
