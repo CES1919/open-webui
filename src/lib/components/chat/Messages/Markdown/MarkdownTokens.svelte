@@ -341,9 +341,8 @@
 				dir="auto"
 			>
 				<div
-					class={`mb-1.5 ${token?.attributes?.type === 'reasoning'
-						? 'reasoning-details-content'
-						: ''}`}
+					class="mb-1.5"
+					class:reasoning-details-content={token?.attributes?.type === 'reasoning'}
 					slot="content"
 				>
 					<svelte:self
