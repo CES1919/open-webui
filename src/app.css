@@ -334,7 +334,17 @@ input[type='number'] {
 .codespan {
 	padding: 0.15rem 0.3rem;
 	font-size: 0.85em;
-	@apply font-mono rounded-md text-gray-800 bg-gray-100 dark:text-gray-200 dark:bg-gray-800 mx-0.5;
+	@apply font-mono rounded-md font-semibold mx-0.5;
+	/* Keep inline code readable even when external markdown themes set low-contrast code colors. */
+	color: rgb(17 24 39) !important; /* gray-900 */
+	background-color: rgb(229 231 235) !important; /* gray-200 */
+	border: 1px solid rgb(209 213 219); /* gray-300 */
+}
+
+.dark .codespan {
+	color: rgb(243 244 246) !important; /* gray-100 */
+	background-color: rgb(55 65 81) !important; /* gray-700 */
+	border-color: rgb(75 85 99); /* gray-600 */
 }
 
 .svelte-flow {
